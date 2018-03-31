@@ -22,7 +22,9 @@
     font-size: 16px
     .tab-item
       flex: 1
-      text-align: center
+      height: 50px
+      width: 50px;
+      border-radius: 10px 10px 10px 10px
       .tab-link
         padding-bottom: 5px
         color: #cccc
