@@ -1,29 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" width="100" height="100">
+    <m-header></m-header>
     <tab></tab>
-    <router-view/>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+    <footers></footers>
   </div>
 </template>
 
 <script>
   import Tab from './components/tab/tab'
+  import MHeader from './components/m-header/m-header'
+  import Footers from './components/footer/footer'
 
   export default {
     name: 'App',
     components: {
-      Tab
+      Tab,
+      MHeader,
+      Footers
     }
   }
 </script>
 
-<style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
+<style scoped lang="stylus" rel="stylesheet/stylus">
 </style>

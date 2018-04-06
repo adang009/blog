@@ -1,11 +1,11 @@
 <template>
   <div class="tab">
-    <router-link tag="div" class="tab-item" to="/">
+    <router-link tag="div" class="tab-item" to="/index">
       <span class="tab-link">首页</span>
     </router-link>
-    <souter-link tag="div" class="tab-item" to="/">
+    <router-link tag="div" class="tab-item" to="/about">
       <span class="tab-link">关于</span>
-    </souter-link>
+    </router-link>
   </div>
 </template>
 
@@ -17,19 +17,21 @@
   .tab
     display: flex
     height: 44px
-    width: 100px
+    width: 100%
     line-height: 44px
     font-size: 16px
+    margin-top: 45px
+    justify-content: center
+    flex-direction: row
     .tab-item
-      flex: 1
       height: 50px
       width: 50px;
-      border-radius: 10px 10px 10px 10px
+      text-align: center
       .tab-link
         padding-bottom: 5px
         color: #cccc
       &.router-link-active
         .tab-link
-          color: #8468cc
+          color: #980d01
           border-bottom: 2px
 </style>
