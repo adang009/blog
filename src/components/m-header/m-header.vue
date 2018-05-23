@@ -1,7 +1,11 @@
 <template>
-  <div class="head_wrap">
-    <div class="text">
-      Just so so
+  <div class="top">
+    <div class="top_content">
+      <ul>
+        <li class="li"><a href="" class="link">联系我们</a></li>
+        <li class="li"><a href="" class="link">加入收藏</a></li>
+        <li class="li"><a href="" class="link">设为首页</a></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -11,20 +15,25 @@
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-  .head_wrap
-    background: #0457b7
+  @import "../.././common/stylus/reset"
+
+  .top
     width: 100%
-    height: 44px
-    position: fixed
-    left: 0
-    top: 0
-    text-align: center
-
-    .text
-      display: inline-block
-      vertical-align: top
-      line-height: 44px
-      font-size: 20px
-      color: #ffff
-
+    height: 27px
+    /*background: url(../../assets/logo.png) repeat-x*/
+    background-color: #ccc
+    .top_content
+      width: 1000px
+      margin: 0 auto
+      font-size: 12px
+      .li
+        float: right
+        width: 100px
+        line-height: 27px
+    .link
+      text-decoration: none
+      &:visited
+        color: #ffffff
+      &:hover
+        color: #ffccff
 </style>
